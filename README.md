@@ -94,4 +94,4 @@ Importante: Nunca compartilhe sua chave de criptografia (`secret.key`) ou suas s
 
 # Contribuições
 
-Contribuições são bem-vindas! Se você deseja melhorar este projeto, sinta-se à vontade para abrir uma "issue" ou enviar um "pull request
+Contribuições são bem-vindas! Se você deseja melhorar este projeto, sinta-se à vontade para abrir uma "issue" ou enviar um "pull request"
