@@ -32,11 +32,24 @@ def decrypt_file(file_path, key):
     with open(file_path, "wb") as file:
         file.write(decrypted_data)
 
-# Desencripitar json
-#key = load_key()
-#decrypt_file("data/passwords.json", key)
 
-#Encripitar json
-# key = load_key()
-# encrypt_file("data/passwords.json", key)
+# Desencriptar ou encriptar JSON
+ed = input('[1] Encrypt / [2] Decrypt / [3] Generate key')
+
+try:
+    if ed == '1':
+        key = load_key()
+        encrypt_file("data/passwords.json", key)
+    elif ed == '2':
+        key = load_key()
+        decrypt_file("data/passwords.json", key)
+    # Gerar uma chave e salvar em um arquivo (fazer isso uma única vez)
+    elif ed == '3':
+        key = generate_key()
+        print("Chave de criptografia gerada e salva em 'data/secret.key'")
+
+except FileNotFoundError as error:
+    print('Arquivo nao encontrado', error)
+    
+
 
